@@ -47,5 +47,5 @@ jobs:
           name: build-artifacts
           path: dist
           node-version: 20
-      - run: aws s3 cp --recursive dist s3://${S3_ASSETS_BUCKET}/web-assets/page-module/ --region eu-central-1
-      - run: aws s3 cp dist/page-module.json s3://${S3_CONFIG_BUCKET}/configs/ --region eu-central-1
+      - run: aws s3 cp --recursive dist s3://${S3_ASSETS_BUCKET}/web-assets/observed-module/ --region eu-central-1
+      - run: aws s3 cp dist/observed-module.json s3://${S3_CONFIG_BUCKET}/configs/ --region eu-central-1
